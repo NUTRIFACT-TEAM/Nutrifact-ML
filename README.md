@@ -1,5 +1,20 @@
 # Nutrifact Machine Learning
 
+## Daftar Isi
+
+1. [Team C242-PS378](#C242-PS378---ml)
+2. [Pendahuluan](#Pendahuluan)
+3. [Nutrition Grade Model Documentation](#NutritionGradeModelDocumentation)
+4. [Fitur Utama](#FiturUtama)
+
+## C242-PS378 - ml
+
+| Bangkit ID    | Nama                     | Learning Path       | Universitas                      |
+|---------------|--------------------------|---------------------|----------------------------------|
+| M117B4KY3021  |  M. Rama Reyswara        | Machine Learning    | Institut Teknologi Nasional Bandung |
+| M117B4KY4584  | Yuval Adilah             | Machine Learning    | Institut Teknologi Nasional Bandung |
+| M125B4KY3691  |  Rangga Rizky Radityo    | Machine Learning    |  Politeknik Manufaktur Bandung      |
+
 ## Pendahuluan
 Notebook ini dirancang untuk:
 1. Membaca teks dari gambar menggunakan **Tesseract OCR**.
@@ -38,35 +53,50 @@ Untuk menginstal library yang diperlukan, jalankan perintah berikut di terminal 
 ```bash
 pip install pytesseract opencv-python-headless numpy tensorflow pandas matplotlib scikit-learn joblib
 
-### 1. Unggah Notebook
+```
+Cara Penggunaan
 - Buka Google Colab.
-- Unggah file `Tesseract&Grading.ipynb`.
+- Unggah file
+```
+Tesseract&Grading.ipynb
 
-### 2. Persiapkan Input
-#### Gambar untuk OCR:
+```
+### 1. Persiapkan Input 
+Gambar untuk OCR:
+```
+
 Siapkan gambar dalam format `.png`, `.jpg`, atau `.jpeg`. Notebook akan membaca gambar tersebut dan mengekstrak teks menggunakan pytesseract.
 
-#### Dataset untuk Grading:
-Jika grading dilakukan menggunakan dataset, siapkan file dataset dalam format `.csv` 
-
-### 3. Jalankan Notebook
-#### Import dan Instalasi:
+```
+ Dataset untuk Grading:
+```
+Jika grading dilakukan menggunakan dataset, siapkan file dataset dalam format `.csv`
+```
+ ### 2. Jalankan Notebook
+Import dan Instalasi:
+```
 Jalankan sel pertama untuk mengimpor library dan menginstal dependensi.
-
-#### Preprocessing:
+```
+Preprocessing:
+```
 Jalankan preprocessing gambar, seperti mengubah gambar ke skala abu-abu, binarisasi, atau penajaman gambar, untuk meningkatkan hasil OCR.
-
-#### Model Training:
+```
+Model Training:
+```
 Jika menggunakan grading berbasis data, jalankan sel untuk melatih model pembelajaran mesin.
-
-#### Evaluasi dan Visualisasi:
+```
+Evaluasi dan Visualisasi:
+```
 Evaluasi model dengan data uji. Notebook akan menampilkan hasil evaluasi dalam bentuk metrik dan grafik performa.
-
-#### Hasil Akhir:
+```
+Hasil Akhir:
+```
 Notebook akan menghasilkan teks dari gambar atau hasil grading berdasarkan dataset.
-
+```
 ### 4. Menyimpan Model dan Hasil
+```
 Model pembelajaran mesin yang telah dilatih dapat disimpan menggunakan format `.h5`
-
+```
 ### 5. konversi model h5 ke json 
+```
 setelah model tersimpan pada format `.h5` lakukan konversi ke format json untuk dapat digunakan untuk aplikasi berbasis web atau integrasi lebih lanjus
