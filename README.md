@@ -37,3 +37,36 @@ Dokumentasi ini menjelaskan cara menggunakan model penilaian nutrisi yang ditera
 Untuk menginstal library yang diperlukan, jalankan perintah berikut di terminal atau notebook:
 ```bash
 pip install pytesseract opencv-python-headless numpy tensorflow pandas matplotlib scikit-learn joblib
+
+### 1. Unggah Notebook
+- Buka Google Colab.
+- Unggah file `Tesseract&Grading.ipynb`.
+
+### 2. Persiapkan Input
+#### Gambar untuk OCR:
+Siapkan gambar dalam format `.png`, `.jpg`, atau `.jpeg`. Notebook akan membaca gambar tersebut dan mengekstrak teks menggunakan pytesseract.
+
+#### Dataset untuk Grading:
+Jika grading dilakukan menggunakan dataset, siapkan file dataset dalam format `.csv` 
+
+### 3. Jalankan Notebook
+#### Import dan Instalasi:
+Jalankan sel pertama untuk mengimpor library dan menginstal dependensi.
+
+#### Preprocessing:
+Jalankan preprocessing gambar, seperti mengubah gambar ke skala abu-abu, binarisasi, atau penajaman gambar, untuk meningkatkan hasil OCR.
+
+#### Model Training:
+Jika menggunakan grading berbasis data, jalankan sel untuk melatih model pembelajaran mesin.
+
+#### Evaluasi dan Visualisasi:
+Evaluasi model dengan data uji. Notebook akan menampilkan hasil evaluasi dalam bentuk metrik dan grafik performa.
+
+#### Hasil Akhir:
+Notebook akan menghasilkan teks dari gambar atau hasil grading berdasarkan dataset.
+
+### 4. Menyimpan Model dan Hasil
+Model pembelajaran mesin yang telah dilatih dapat disimpan menggunakan format `.h5`
+
+### 5. konversi model h5 ke json 
+setelah model tersimpan pada format `.h5` lakukan konversi ke format json untuk dapat digunakan untuk aplikasi berbasis web atau integrasi lebih lanjus
