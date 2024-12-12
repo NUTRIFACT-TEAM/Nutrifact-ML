@@ -7,13 +7,13 @@
 3. [Nutrition Grade Model Documentation](#NutritionGradeModelDocumentation)
 4. [Fitur Utama](#FiturUtama)
 
-## C242-PS378 - ml
+## C242-PS378 - ML
 
 | Bangkit ID    | Nama                     | Learning Path       | Universitas                      |
 |---------------|--------------------------|---------------------|----------------------------------|
 | M117B4KY3021  |  M. Rama Reyswara        | Machine Learning    | Institut Teknologi Nasional Bandung |
 | M117B4KY4584  | Yuval Adilah             | Machine Learning    | Institut Teknologi Nasional Bandung |
-| M125B4KY3691  |  Rangga Rizky Radityo    | Machine Learning    |  Politeknik Manufaktur Bandung      |
+| M125B4KY3691  |  Rangga Rizky Radityo    | Machine Learning    | Politeknik Manufaktur Bandung       |
 
 ## Pendahuluan
 Notebook ini dirancang untuk:
